@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #f9fafc;
+  color: #333;
+} /* Header */
+.site-header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+.site-header h1 {
+  font-size: 2.5rem;
+}
+.site-header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+} /* Info Section */
+.info-section {
+  position: relative;
+  padding: 2rem;
+  max-width: 100%;
+  margin: auto;
+  background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000 100%);
+
+  overflow: hidden;
+}
+
+/* layer of dense stars */
+.info-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: transparent;
+
+  background-image: 
+    /* large stars */
+    radial-gradient(2px 2px at 20px 30px, white, transparent),
+    radial-gradient(2px 2px at 400px 100px, white, transparent),
+    radial-gradient(2px 2px at 700px 200px, white, transparent),
+    radial-gradient(2px 2px at 100px 600px, white, transparent),
+    radial-gradient(2px 2px at 500px 500px, white, transparent),
+
+    /* medium stars */
+    radial-gradient(1.5px 1.5px at 300px 200px, white, transparent),
+    radial-gradient(1.5px 1.5px at 600px 300px, white, transparent),
+    radial-gradient(1.5px 1.5px at 800px 400px, white, transparent),
+    radial-gradient(1.5px 1.5px at 200px 700px, white, transparent),
+    radial-gradient(1.5px 1.5px at 750px 600px, white, transparent),
+
+    /* tiny stars — MANY more */
+    radial-gradient(1px 1px at 50px 50px, white, transparent),
+    radial-gradient(1px 1px at 150px 250px, white, transparent),
+    radial-gradient(1px 1px at 350px 150px, white, transparent),
+    radial-gradient(1px 1px at 450px 350px, white, transparent),
+    radial-gradient(1px 1px at 650px 100px, white, transparent),
+    radial-gradient(1px 1px at 550px 600px, white, transparent),
+    radial-gradient(1px 1px at 700px 700px, white, transparent),
+    radial-gradient(1px 1px at 100px 500px, white, transparent),
+    radial-gradient(1px 1px at 250px 650px, white, transparent),
+    radial-gradient(1px 1px at 400px 750px, white, transparent);
+
+  background-repeat: repeat;
+  background-size: 400px 400px; /* tighter grid = way more stars */
+  z-index: 0;
+
+  animation: twinkle 8s linear infinite;
+}
+/* make cards/content appear above stars */
+.info-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* subtle twinkling effect */
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.info-section h2 {
+  margin: 2rem 0 1rem;
+  font-size: 1.8rem;
+  color: white;
+} /* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+}
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #2563eb;
+} /* Timeline Section */
+.timeline-section {
+  background: #eef2ff;
+  padding: 2rem;
+}
+.timeline-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1e3a8a;
+} /* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e3a8a;
+  color: white;
+  font-size: 0.9rem;
+}
+/* ...your existing CSS above... */
+
+/* ===== Modal Styles ===== */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close {
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #666;
+}
+.close:hover {
+  color: #000;
+}

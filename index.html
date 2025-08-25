@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemistry Timeline Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <h1 style="color: purple">✨ 𝒞𝒽𝑒𝓂𝒾𝓈𝓉𝓇𝓎 𝒯𝒾𝓂𝑒𝓁𝒾𝓃𝑒 ✨</h1>
+      <p>𝓐 𝓳𝓸𝓾𝓻𝓷𝓮𝔂 𝓽𝓱𝓻𝓸𝓾𝓰𝓱 𝓫𝓸𝓷𝓭𝓲𝓷𝓰, 𝓶𝓪𝓽𝓽𝓮𝓻, 𝓪𝓷𝓭 𝓽𝓱𝓮 𝓱𝓲𝓼𝓽𝓸𝓻𝔂 𝓸𝓯 𝓬𝓱𝓮𝓶𝓲𝓼𝓽𝓻𝔂</p>
+    </header>
+
+    <!-- Info Section -->
+    <section class="info-section">
+      <h2>Chemical Bonding</h2>
+      <div class="card-grid">
+        <div class="card" data-modal="ionic">
+          <h3>Ionic Bonds</h3>
+          <p>
+            Ionic bonds are formed through the transfer of electrons between
+            atoms...
+          </p>
+        </div>
+        <div class="card" data-modal="covalent">
+          <h3>Covalent Bonds</h3>
+          <p>
+            Covalent bonds are formed through the sharing of electrons between
+            atoms...
+          </p>
+        </div>
+        <div class="card" data-modal="metallic">
+          <h3>Metallic Bonds</h3>
+          <p>
+            Metallic bonds involve a 'sea' of delocalized electrons moving
+            freely among metal atoms...
+          </p>
+        </div>
+      </div>
+
+      <h2>States of Matter</h2>
+      <div class="card-grid">
+        <div class="card" data-modal="solid">
+          <h3>Solid</h3>
+          <p>Solids have fixed shape and volume...</p>
+        </div>
+        <div class="card" data-modal="liquid">
+          <h3>Liquid</h3>
+          <p>Liquids have fixed volume but take container shape...</p>
+        </div>
+        <div class="card" data-modal="gas">
+          <h3>Gas</h3>
+          <p>Gases expand to fill any container...</p>
+        </div>
+        <div class="card" data-modal="plasma">
+          <h3>Plasma</h3>
+          <p>Plasma is an ionized gas with high energy particles...</p>
+        </div>
+        <div class="card" data-modal="phase">
+          <h3>Phase Change</h3>
+          <p>Occurs when matter transitions from one state to another...</p>
+        </div>
+      </div>
+
+      <h2>Other Branches of Chemistry</h2>
+      <div class="card-grid">
+        <div class="card" data-modal="organic">
+          <h3>Organic Chemistry</h3>
+          <p>Study of carbon-based compounds, bonding, and reactions...</p>
+        </div>
+        <div class="card" data-modal="inorganic">
+          <h3>Inorganic Chemistry</h3>
+          <p>Study of compounds that are not carbon-based...</p>
+        </div>
+        <div class="card" data-modal="physical">
+          <h3>Physical Chemistry</h3>
+          <p>
+            Explores thermodynamics, kinetics, electrochemistry, and quantum
+            theory...
+          </p>
+        </div>
+        <div class="card" data-modal="biochem">
+          <h3>Biochemistry</h3>
+          <p>
+            Focuses on proteins, nucleic acids, carbohydrates, and life
+            processes...
+          </p>
+        </div>
+        <div class="card" data-modal="analytical">
+          <h3>Analytical Chemistry</h3>
+          <p>
+            Focuses on identifying and measuring chemical components in
+            samples...
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="periodictable">
+      <h1>Interactable Periodic Table [Credits to Periodicum]</h1>
+      <iframe
+        src="https://periodicum.pages.dev/"
+        style="width: 100%; height: 90vh; border: none"
+      >
+      </iframe>
+    </section>
+
+    <!-- Timeline -->
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+      <h2>History of Chemistry</h2>
+
+      <section class="cd-timeline js-cd-timeline">
+        <div class="container max-width-lg cd-timeline__container">
+          <!-- Ancient Chemistry -->
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--picture">
+              <img
+                src="/img/cd-icon-picture.svg"
+                alt="Ancient Chemistry"
+              />
+            </div>
+            <div class="cd-timeline__content text-component">
+              <h2>Ancient Chemistry</h2>
+              <p>
+                <strong>Alchemy:</strong> A protoscience practiced in Arabia,
+                Greece, Egypt, and China. Alchemists sought to turn base metals
+                into gold and cure diseases, and though unsuccessful, they
+                pioneered techniques for purifying and analyzing substances.
+              </p>
+              <p>
+                <strong>Early Metallurgy:</strong> Civilizations developed
+                methods of extracting metals and creating alloys like bronze and
+                advanced steels (e.g., India’s wootz steel).
+              </p>
+              <p>
+                <strong>Contributions from Ancient Civilizations:</strong> Fire
+                control led to glass discovery and metal purification. Egyptians
+                mastered embalming and metal manipulation.
+              </p>
+              <span class="cd-timeline__date">Ancient Era</span>
+            </div>
+          </div>
+
+          <!-- Scientific Revolution -->
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--movie">
+              <img
+                src="/img/cd-icon-picture.svg"
+                alt="Scientific Revolution"
+              />
+            </div>
+            <div class="cd-timeline__content text-component">
+              <h2>The Scientific Revolution</h2>
+              <p>
+                <strong>Robert Boyle:</strong> Founder of modern chemistry.
+                Introduced Boyle’s Law and emphasized quantitative experiments.
+              </p>
+              <p>
+                <strong>Antoine Lavoisier:</strong> Father of modern chemistry.
+                Established the law of conservation of mass, named oxygen and
+                hydrogen, and contributed to the metric system.
+              </p>
+              <p>
+                <strong>Scientific Method:</strong> Marked a shift toward
+                empirical, systematic experimentation and theoretical
+                frameworks.
+              </p>
+              <span class="cd-timeline__date">17th–18th Century</span>
+            </div>
+          </div>
+
+          <!-- Modern Chemistry -->
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--location">
+              <img
+                src="/img/cd-icon-picture.svg"
+                alt="Modern Chemistry"
+              />
+            </div>
+            <div class="cd-timeline__content text-component">
+              <h2>Modern Chemistry</h2>
+              <p>
+                <strong>Dalton’s Atomic Theory:</strong> Proposed indivisible
+                atoms, identical per element, rearranging in reactions.
+              </p>
+              <p>
+                <strong>Mendeleev’s Periodic Table:</strong> Organized elements
+                by atomic mass and properties in 1869, predicting undiscovered
+                elements.
+              </p>
+              <p>
+                <strong>Quantum Chemistry:</strong> Emerged after the discovery
+                of the electron in 1897. Applied quantum mechanics to explain
+                bonding and molecular properties.
+              </p>
+              <span class="cd-timeline__date">19th–20th Century</span>
+            </div>
+          </div>
+
+          <!-- Notable Chemists -->
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--picture">
+              <img
+                src="/img/cd-icon-picture.svg"
+                alt="Notable Chemists"
+              />
+            </div>
+            <div class="cd-timeline__content text-component">
+              <h2>Notable Chemists</h2>
+              <p>
+                <strong>Marie Curie:</strong> Discovered polonium and radium,
+                pioneered radioactivity research, first woman to win a Nobel
+                Prize.
+              </p>
+              <p>
+                <strong>Robert Boyle:</strong> Bridged alchemy and modern
+                chemistry with his laws of gases.
+              </p>
+              <p>
+                <strong>Antoine Lavoisier:</strong> Revolutionized chemistry
+                with systematic naming and conservation of mass.
+              </p>
+              <p>
+                <strong>John Dalton:</strong> Introduced atomic theory,
+                explaining atomic behavior by weight.
+              </p>
+              <span class="cd-timeline__date">18th–20th Century</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <p>Created for Science Project<br>Made jointly by Mharlyn Joyce Tayab & Lelouch DC</p>
+    </footer>
+
+    <!-- ===== Modals (hidden by default) ===== -->
+    <div id="ionic" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ionic Bonds</h2>
+        <p>
+          Ionic bonds are formed through the transfer of electrons between
+          atoms, typically between a metal and a nonmetal.
+          <br /><br /><strong>Process:</strong> <br />1. Electron Transfer: One
+          atom (usually a metal) loses electrons to become a positively charged
+          ion (cation). <br />2. Ion Formation: Another atom (usually a
+          nonmetal) gains electrons to become a negatively charged ion (anion).
+          <br />3. Electrostatic Attraction: The oppositely charged ions are
+          attracted to each other, forming the ionic bond. <br /><strong
+            >Properties:</strong
+          >
+          High melting/boiling points, hard and brittle, conduct electricity in
+          solution.
+        </p>
+      </div>
+    </div>
+
+    <div id="covalent" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Covalent Bonds</h2>
+        <p>
+          Covalent bonds are formed through the sharing of electrons between
+          atoms, usually between nonmetals.
+          <br /><br /><strong>Types:</strong> <br />Single Bond: One pair of
+          electrons is shared. <br />Double Bond: Two pairs of electrons are
+          shared. <br />Triple Bond: Three pairs of electrons are shared.
+          <br /><strong>Polarity:</strong> <br />Nonpolar Covalent Bond:
+          Electrons are shared equally between atoms<br />
+          Polar Covalent Bond: Electrons are shared unequally, resulting in a
+          partial positive (δ+) and partial negative (δ-) charge on the atoms
+          <br /><strong>Properties:</strong>
+          Lower melting points, may be gas/liquid/solid, poor conductors.
+        </p>
+      </div>
+    </div>
+
+    <div id="metallic" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Metallic Bonds</h2>
+        <p>
+          Metallic bonds are formed between metal atoms, where electrons are
+          delocalized and free to move throughout the metal structure. <br />
+          <strong>Electron Sea Model:</strong> <br />
+          Metal atoms release their valence electrons into a "sea" of electrons,
+          which are not associated with any particular atom. <br /><strong
+            >Properties:</strong
+          >
+          Conductive, malleable, ductile, shiny.
+        </p>
+      </div>
+    </div>
+    <div id="phase" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Phase Change</h2>
+        <p>
+          Phase changes involve the transition of matter from one state to
+          another. <br />
+          <strong>Common phase changes include:</strong> <br />
+          Melting: Solid to liquid (e.g., ice melting into water).
+          <br />
+          Freezing: Liquid to solid (e.g., water freezing into ice). <br />
+          Boiling (Vaporization): Liquid to gas (e.g., water boiling into
+          steam). <br />
+          Condensation: Gas to liquid (e.g., steam condensing into water).
+          <br />
+          Sublimation: Solid to gas (e.g., dry ice sublimating into carbon
+          dioxide gas). <br />
+
+          Deposition: Gas to solid (e.g., frost forming on a cold surface).
+        </p>
+      </div>
+    </div>
+    <!-- ===== States of Matter ===== -->
+    <div id="solid" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Solid</h2>
+        <p>
+          <strong>Definition:</strong> Solids have a fixed shape and volume.
+          <br />
+          <strong>Molecular Arrangement:</strong> Molecules are tightly packed
+          in a fixed arrangement. <br />
+          <strong>Properties:</strong> Rigid, incompressible. <br />
+          <strong>Examples:</strong> Ice, rock, wood, metal.
+        </p>
+      </div>
+    </div>
+
+    <div id="liquid" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Liquid</h2>
+        <p>
+          <strong>Definition:</strong> Liquids have fixed volume but take the
+          shape of their container. <br />
+          <strong>Molecular Arrangement:</strong> Molecules are closely packed
+          but can move. <br />
+          <strong>Properties:</strong> Fluid, nearly incompressible. <br />
+          <strong>Examples:</strong> Water, oil, alcohol.
+        </p>
+      </div>
+    </div>
+
+    <div id="gas" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Gas</h2>
+        <p>
+          <strong>Definition:</strong> Gases have no fixed shape or volume,
+          expand to fill container. <br />
+          <strong>Molecular Arrangement:</strong> Molecules widely dispersed,
+          moving randomly. <br />
+          <strong>Properties:</strong> Compressible, low density. <br />
+          <strong>Examples:</strong> Air, oxygen, helium.
+        </p>
+      </div>
+    </div>
+
+    <div id="plasma" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Plasma</h2>
+        <p>
+          <strong>Definition:</strong> Plasma is an ionized gas with positive
+          ions and free electrons. <br />
+          <strong>Molecular Arrangement:</strong> High energy causes electrons
+          to strip from atoms. <br />
+          <strong>Properties:</strong> Conducts electricity, influenced by
+          magnetic fields. <br />
+          <strong>Examples:</strong> Lightning, stars, neon signs.
+        </p>
+      </div>
+    </div>
+
+    <!-- ===== Organic Chemistry ===== -->
+    <div id="organic" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Organic Chemistry</h2>
+        <p>
+          <strong>Definition:</strong> Study of carbon-containing compounds and
+          their properties. <br />
+          <strong>Key Concepts:</strong> Carbon bonding, isomers. <br />
+          <strong>Functional Groups:</strong> Determine characteristic chemical
+          reactions. <br />
+          <strong>Reactions:</strong> Addition, elimination, substitution,
+          rearrangement. <br />
+          <em>Applications:</em> Pharmaceuticals, polymers, fuels.
+        </p>
+      </div>
+    </div>
+
+    <!-- ===== Inorganic Chemistry ===== -->
+    <div id="inorganic" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Inorganic Chemistry</h2>
+        <p>
+          <strong>Definition:</strong> Study of compounds not primarily based on
+          carbon-hydrogen bonds. <br />
+          <strong>Includes:</strong> Metals, salts, minerals, coordination
+          compounds. <br />
+          <strong>Types:</strong> Acids, bases, salts, oxides, intermetallics.
+          <br />
+          <em>Applications:</em> Materials, catalysts, pigments.
+        </p>
+      </div>
+    </div>
+
+    <!-- ===== Physical Chemistry ===== -->
+    <div id="physical" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Physical Chemistry</h2>
+        <p>
+          <strong>Definition:</strong> Uses physics principles to explain
+          chemical systems. <br />
+          <strong>Branches:</strong> <br />
+          Thermodynamics – energy, enthalpy, entropy, Gibbs free energy. <br />
+          Kinetics – reaction rates, mechanisms, catalysts. <br />
+          Electrochemistry – electricity + chemical change (batteries,
+          electrolysis). <br />
+          Quantum Chemistry – bonding, molecular orbitals, electron behavior.
+          <br />
+          <em>Purpose:</em> Predicting and explaining chemical behavior.
+        </p>
+      </div>
+    </div>
+
+    <!-- ===== Biochemistry ===== -->
+    <div id="biochem" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Biochemistry</h2>
+        <p>
+          <strong>Definition:</strong> Study of chemical processes in living
+          organisms. <br />
+          <strong>Macromolecules:</strong> <br />
+          Proteins – enzymes, hormones, structural roles. <br />
+          Carbohydrates – energy storage, structure, signaling. <br />
+          Lipids – membranes, hormones, insulation, energy. <br />
+          Nucleic Acids – DNA & RNA, genetic storage/expression. <br />
+          <strong>Metabolism:</strong> Catabolism (breakdown), Anabolism
+          (synthesis), pathways like glycolysis & Krebs cycle. <br />
+        </p>
+      </div>
+    </div>
+
+    <!-- ===== Analytical Chemistry ===== -->
+    <div id="analytical" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Analytical Chemistry</h2>
+        <p>
+          <strong>Definition:</strong> Focuses on separation, identification,
+          and quantification of matter. <br />
+          <strong>Qualitative Analysis:</strong> Identifies components in a
+          sample. <br />
+          <strong>Quantitative Analysis:</strong> Determines how much of each
+          component is present. <br />
+          <em>Applications:</em> Environmental monitoring, pharmaceuticals, food
+          safety, clinical labs.
+        </p>
+      </div>
+    </div>
+
+    <!-- (Repeat same structure for Solid, Liquid, Gas, Plasma, Organic, etc.) -->
+
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
